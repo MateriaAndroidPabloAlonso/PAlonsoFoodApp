@@ -38,12 +38,12 @@ fun HomeScreen(innerPadding : PaddingValues) {
         modifier = Modifier
             .fillMaxSize()
             .background(Color.White)
-            .padding(40.dp)
+            .padding(horizontal = 20.dp, vertical = 40.dp)
     ) {
         Header()
         Spacer(modifier = Modifier.height(16.dp))
 
-        Text("Nuestras categorías", fontSize = 18.sp, fontWeight = FontWeight.Bold)
+        Text("Nuestras categorías", fontSize = 25.sp, fontWeight = FontWeight.SemiBold)
         LazyRow (
             modifier = Modifier.fillMaxWidth().padding(top = 20.dp),
             horizontalArrangement = Arrangement.spacedBy(16.dp)
@@ -53,7 +53,7 @@ fun HomeScreen(innerPadding : PaddingValues) {
             }
         }
         Spacer(modifier = Modifier.height(16.dp))
-        Text(text = "Busca los mejores restaurantes", fontSize = 18.sp, fontWeight = FontWeight.Bold)
+        Text(text = "Busca los mejores restaurantes", fontSize = 25.sp, fontWeight = FontWeight.SemiBold)
         LazyRow (
             modifier = Modifier.fillMaxWidth().padding(top = 20.dp),
             horizontalArrangement = Arrangement.spacedBy(16.dp)
@@ -63,7 +63,7 @@ fun HomeScreen(innerPadding : PaddingValues) {
             }
         }
         Spacer(modifier = Modifier.height(16.dp))
-        Text(text = "Nuestras mejores comidas", fontSize = 18.sp, fontWeight = FontWeight.Bold)
+        Text(text = "Nuestras mejores comidas", fontSize = 25.sp, fontWeight = FontWeight.SemiBold)
         LazyVerticalGrid(
             columns = GridCells.Fixed(count = 2)
         ) {

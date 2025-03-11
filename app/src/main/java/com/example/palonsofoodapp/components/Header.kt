@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -28,11 +29,11 @@ fun Header() {
         Row (
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Image(imageVector = CircleUser, contentDescription = null)
+            Image(imageVector = CircleUser, contentDescription = null, modifier = Modifier.size(35.dp))
             Spacer(modifier = Modifier.width(8.dp))
-            Text(text = "Hola, Pablo", fontSize = 20.sp, fontWeight = FontWeight.Bold)
+            Text(text = "Hola, Pablo", fontSize = 30.sp, fontWeight = FontWeight.Bold)
         }
-        Image(imageVector = Logout, contentDescription = null)
+        Image(imageVector = Logout, contentDescription = null, modifier = Modifier.size(35.dp))
     }
 }
 
