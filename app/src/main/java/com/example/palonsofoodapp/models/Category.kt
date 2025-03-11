@@ -8,7 +8,7 @@ data class Category(
 val categoriesList = listOf(
     Category(
         name = "Comida rapida",
-        image = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.vecteezy.com%2Farte-vectorial%2F28206639-un-vector-logo-diseno-para-un-comida-rapida-restaurante-hamburguesa-suave-bebida-y-papas-fritas&psig=AOvVaw16nhmwMR9zRAF3LHPfnuCz&ust=1741750794067000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOjO8L6NgYwDFQAAAAAdAAAAABAE"
+        image = "https://cdn-icons-png.flaticon.com/512/2921/2921822.png"
     ),
     Category(
         name = "Comida china",
