@@ -22,7 +22,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.palonsofoodapp.components.CategoryItem
 import com.example.palonsofoodapp.components.Header
+import com.example.palonsofoodapp.components.RestaurantItem
 import com.example.palonsofoodapp.models.categoriesList
+import com.example.palonsofoodapp.models.restaurantsList
 import com.example.palonsofoodapp.ui.theme.PAlonsoFoodAppTheme
 
 @Composable
@@ -47,6 +49,14 @@ fun HomeScreen(innerPadding : PaddingValues) {
         }
         Spacer(modifier = Modifier.height(16.dp))
         Text(text = "Busca los mejores restaurantes", fontSize = 18.sp, fontWeight = FontWeight.Bold)
+        LazyRow (
+            modifier = Modifier.fillMaxWidth().padding(top = 20.dp),
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
+        ){
+            items(restaurantsList) { restaurant ->
+                RestaurantItem(restaurant = restaurant)
+            }
+        }
     }
 }
 
