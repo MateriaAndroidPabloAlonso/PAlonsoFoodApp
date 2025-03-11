@@ -3,7 +3,9 @@ package com.example.palonsofoodapp.screens
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -11,6 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.palonsofoodapp.components.Header
 import com.example.palonsofoodapp.ui.theme.PAlonsoFoodAppTheme
 
 @Composable
@@ -19,8 +22,11 @@ fun HomeScreen(innerPadding : PaddingValues) {
         modifier = Modifier
             .fillMaxSize()
             .background(Color.White)
-            .padding(16.dp)
-    ) {  }
+            .padding(40.dp)
+    ) {
+        Header()
+        Spacer(modifier = Modifier.height(16.dp))
+    }
 }
 
 @Preview (
