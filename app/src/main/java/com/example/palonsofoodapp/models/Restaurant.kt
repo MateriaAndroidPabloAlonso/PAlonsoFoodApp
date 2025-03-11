@@ -8,22 +8,22 @@ data class Restaurant(
 val restaurantsList = listOf(
     Restaurant(
         name = "Burger King",
-        image = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.logodownload.org%2Fburger-king-logo%2F&psig=AOvVaw0cYHvViRprALNsDCUkxocP&ust=1741751414880000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNDi6OOPgYwDFQAAAAAdAAAAABAI"
+        image = "https://logodownload.org/wp-content/uploads/2015/02/burger-king-logo-0.png"
     ),
     Restaurant(
         name = "McDonald's",
-        image = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.m.wikipedia.org%2Fwiki%2FArchivo%3AMcDonald%2527s_logo.svg&psig=AOvVaw2PnzWoDHpiIGPB28aYEDW_&ust=1741751452462000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCID9ofaPgYwDFQAAAAAdAAAAABAI"
+        image = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/450px-McDonald%27s_logo.svg.png"
     ),
     Restaurant(
         name = "KFC",
-        image = "https://www.google.com/url?sa=i&url=https%3A%2F%2Ficonscout.com%2Fes%2Ficons%2Fkfc&psig=AOvVaw1SjoALZQm7Gs4SZKLit7u_&ust=1741751519603000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIiy5JaQgYwDFQAAAAAdAAAAABAE"
+        image = "https://cdn.iconscout.com/icon/free/png-512/free-kfc-2-226243.png?f=webp&w=256"
     ),
     Restaurant(
         name = "Subway",
-        image = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fes%2Fpng-etnbs&psig=AOvVaw1czLdb3eVkbIvfvf_Y128l&ust=1741751552652000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNjd_qaQgYwDFQAAAAAdAAAAABAE"
+        image = "https://cdn.iconscout.com/icon/free/png-256/free-subway-logo-icon-download-in-svg-png-gif-file-formats--food-and-beverages-pack-logos-icons-226366.png"
     ),
     Restaurant(
         name = "Pizza Hut",
-        image = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fgraffica.info%2Fquien-diseno-el-logo-de-pizza-hut%2F&psig=AOvVaw0VEj-d0OAhMR70wDndFpv9&ust=1741751596610000&source=images&opi=89978449"
+        image = "https://graffica.info/wp-content/uploads/2017/07/Pizza_Hut_Logo_3.png"
     )
 )
