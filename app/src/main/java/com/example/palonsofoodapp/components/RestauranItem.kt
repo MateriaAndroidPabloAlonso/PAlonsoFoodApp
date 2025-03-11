@@ -23,11 +23,17 @@ import com.example.palonsofoodapp.ui.theme.PAlonsoFoodAppTheme
 fun RestaurantItem(restaurant: Restaurant) {
     Column (horizontalAlignment = Alignment.CenterHorizontally
     ){
-        GlideImage(
-            model = restaurant.image,
-            contentDescription = null,
-            modifier = Modifier.size(70.dp)
-        )
+        Box(
+            modifier = Modifier.background(Color.White, shape = CircleShape)
+                .size(100.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            GlideImage(
+                model = restaurant.image,
+                contentDescription = null,
+                modifier = Modifier.size(100.dp)
+            )
+        }
         Text(text = restaurant.name)
     }
 }
