@@ -10,6 +10,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -21,9 +24,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.palonsofoodapp.components.CategoryItem
+import com.example.palonsofoodapp.components.FoodCard
 import com.example.palonsofoodapp.components.Header
 import com.example.palonsofoodapp.components.RestaurantItem
 import com.example.palonsofoodapp.models.categoriesList
+import com.example.palonsofoodapp.models.foodList
 import com.example.palonsofoodapp.models.restaurantsList
 import com.example.palonsofoodapp.ui.theme.PAlonsoFoodAppTheme
 
@@ -55,6 +60,15 @@ fun HomeScreen(innerPadding : PaddingValues) {
         ){
             items(restaurantsList) { restaurant ->
                 RestaurantItem(restaurant = restaurant)
+            }
+        }
+        Spacer(modifier = Modifier.height(16.dp))
+        Text(text = "Nuestras mejores comidas", fontSize = 18.sp, fontWeight = FontWeight.Bold)
+        LazyVerticalGrid(
+            columns = GridCells.Fixed(count = 2)
+        ) {
+            items(foodList) { food ->
+                FoodCard(food = food)
             }
         }
     }
